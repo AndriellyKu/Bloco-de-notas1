@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo" class="mt-1 mx-3">
+            <a href="">
+                <i class="bi bi-journals display-5 text-light"></i>
+            </a>
+        </div>
+        <div id="display"></div>
+        <div id="user"></div>
+    </header>
+    <msgs></msgs>
+    <h1 class="texto-aviso"></h1>
+    <main>
+        <div id="controls">
+            <div id="add-note" class="mb-3">
+                <a href="" >
+                    <i class="bi bi-plus-square-fill " style="font-size: 2rem;"></i>
+                </a>
+            </div>
+        </div>
+        <div id="notes"> </div>
+
+        <div id="modal-view" style="background-color: rgb(147, 147, 147);">
+            <div id="close-modal">
+                <a href="" >
+                    <i class="bi bi-x-square text-danger" ></i>
+                </a>
+            </div>
+            <div id="title-note" class="text-light"> </div>
+            <div id="content-note" class="text-light"> </div>
+            <div id="controls-note" class="text-light">
+                <div id="deletar-nota">
+                    <a href="">
+                        <i class="bi bi-trash-fill text-danger"></i>
+                    </a>
+                </div>
+                <div id="editar-nota">
+                    <a href="">
+                        <i class="bi bi-pencil-square text-light"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal">
+            <div class="mb-3" style="display:flex; justify-content: space-between;">
+                <div>
+                    <a href="" id="btn-save-note">
+                        <i class="bi bi-save text-light" ></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="" style="color:#e25083" id="btn-close-note">
+                        <i class="bi bi-x-square text-danger" ></i>
+                    </a>
+                </div>
+            </div>
+            <input type="hidden" id="input-id" >
+            <div class="mb-3">
+                <label for="title" class="form-label text-light">Title</label>
+                <input type="text" class="form-control" id="input-title" placeholder="Title">
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label text-light">Notes</label>
+                <textarea class="form-control" id="input-content" rows="4"></textarea>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
