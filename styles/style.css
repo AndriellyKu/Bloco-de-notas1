@@ -94,7 +94,7 @@ main{
 
 #modal input, #modal textarea {
   color: e25083;
-  background-color: #0B1726;
+  background-color: #9a9a9a;
 }
 
 #modal input::placeholder {
