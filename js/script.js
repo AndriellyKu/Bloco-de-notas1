@@ -89,12 +89,8 @@ const loadNotes = () => {
     let notes = localStorage.getItem('notes');
     if(notes === null || (notes && JSON.parse(notes).length === 0)){
         notes = [];
-        console.log("NAO tem NOta");
-        document.querySelector('.texto-aviso').innerText = 'There are no notes yet :(';
-        document.querySelector('.texto-aviso').style.display = 'block';
         } else {
         notes = JSON.parse(notes);
-        document.querySelector('.texto-aviso').innerText = '';
     }
     return notes;
 };
